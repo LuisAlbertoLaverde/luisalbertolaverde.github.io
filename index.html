@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="/styles.css">
+    <!--favicon-->
+    <link rel="apple-touch-icon" sizes="57x57" href="/apple-icon-57x57.png">
+<link rel="apple-touch-icon" sizes="60x60" href="favicon/apple-icon-60x60.png">
+<link rel="apple-touch-icon" sizes="72x72" href="favicon/apple-icon-72x72.png">
+<link rel="apple-touch-icon" sizes="76x76" href="favicon/apple-icon-76x76.png">
+<link rel="apple-touch-icon" sizes="114x114" href="favicon/apple-icon-114x114.png">
+<link rel="apple-touch-icon" sizes="120x120" href="favicon/apple-icon-120x120.png">
+<link rel="apple-touch-icon" sizes="144x144" href="favicon/apple-icon-144x144.png">
+<link rel="apple-touch-icon" sizes="152x152" href="favicon/apple-icon-152x152.png">
+<link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-icon-180x180.png">
+<link rel="icon" type="image/png" sizes="192x192"  href="favicon/android-icon-192x192.png">
+<link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="96x96" href="favicon/favicon-96x96.png">
+<link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
+<link rel="manifest" href="favicon/manifest.json">
+<meta name="msapplication-TileColor" content="#ffffff">
+<meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+<meta name="theme-color" content="#ffffff">
+</head>
+<body>
+    <!--header menu-->
+    <div class="container-header">
+        <header>
+            <div class="logo">
+                <a href="#">Portfolio</a>
+            </div>
+            <nav id="nav">
+                <ul>
+                    <li><a href="#home" onclick="select()">HOME</a></li>
+                    <li><a href="#aboutme" onclick="select()">ABOUT ME</a></li>
+                    <li><a href="#skills" onclick="select()">SKILLS</a></li>
+                    <li><a href="#portfolio" onclick="select()">PORTFOLIO</a></li>
+                    <li><a href="#contact" onclick="select()">CONTACT</a></li>
+                </ul>
+            </nav>
+            <div class="nav-responsive" onclick="showHideMenu()">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+        </header>
+    </div>
+
+    <!--Section home-->
+    <section id="home" class="home">
+        <div class="container-banner">
+            <div class="container-img">
+                <img src="/img/foto3-pic.png" alt="">
+            </div>
+            <h2 class="greeting">Hello,</h2>
+            <h2>my name is</h2>
+            <h1>Alberto Laverde</h1>
+            <h2>programming student</h2>
+            <h2>Frontend-Backend</h2>
+            <div class="networks">
+                <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+                <a href="#"><i class="fa-brands fa-github"></i></a>
+                <a href="#"><i class="fa-brands fa-twitter"></i></a>
+            </div>
+        </div>
+
+    </section>
+
+    <!--Section about me-->
+    <section id="aboutme" class="aboutme"> 
+        <div class="container-section">
+            <h2>About me</h2>
+            <p>I have always felt attracted to computer technologies, until now I had not felt the passion and need to learn them, I have already taken the first step, I am very motivated and interested in applying what I have learned and acquiring more knowledge for continuous development</p>
+
+                <!--personal information-->
+                <div class="col">
+                    <div class="information">
+                        <h3>Personal information</h3>
+                        <ul>
+                            <li>
+                                <strong>Birthday</strong>
+                                <strong>Cell phone</strong>
+                                <strong>Email</strong>
+                                <strong>Web site</strong>
+                                <strong>Address</strong>
+                            </li>
+                            <li>
+                                <span>
+                                    1-8-1976
+                                </span>
+                                <span>
+                                    (+57) 305 417 5387
+                                </span>
+                                <span>
+                                    unumnio@gmail.com
+                                </span>
+                                <span>
+                                    www.exampleail.com
+                                </span>
+                                <span>
+                                    Cali, Colombia
+                                </span>
+                            </li>
+                        </ul>
+                    </div>
+                <!--hobbies-->
+                    <div class="hobbies">
+                        <h3>Hobbies</h3>
+                        <div class="container-interests">
+                            <div class="interest">
+                                <i class="fa-solid fa-gamepad"></i>
+                                <span>Games</span>
+                            </div>
+                            <div class="interest">
+                                <i class="fa-solid fa-headphones"></i>
+                                <span>Music</span>
+                            </div>
+                            <div class="interest">
+                                <i class="fa-solid fa-plane"></i>
+                                <span>Travels</span>
+                            </div>
+                            <div class="interest">
+                                <i class="fa-solid fa-film"></i>
+                                <span>Cinema</span>
+                            </div> 
+                            <div class="interest">
+                                <i class="fa-solid fa-book"></i>
+                                <span>Books</span>
+                            </div> 
+                            <div class="interest">
+                                <i class="fa-solid fa-graduation-cap"></i>
+                                <span>To learn</span>
+                            </div> 
+                        </div>
+                    </div>
+                </div>
+            <button>
+                To download CV <i class="fa-solid fa-download"></i>
+                <span class="overlay"></span>
+            </button>
+        </div>
+    </section>
+
+    <!--Section technical skills-->
+    <section class="skills" id="skills">
+        <div class="container-section">
+            <h2>Technical skills</h2>
+                <p>I am self-taught, to learn I constantly use documentation, resources and learning platforms such as (Platzi, EdTeam, Codigo Facilito, Crehana, Google Activate, You tube.....)</p>
+            <div class="file">
+                <!--Thechnical skills-->
+                <div class="col">
+                    <div class="skill">
+                        <span>C# intermediate level</span>
+                        <div class="skill-bar">
+                            <div class="progress">
+                                <span>15%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Javascript basic level</span>
+                        <div class="skill-bar">
+                            <div class="progress">
+                                <span>5%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Html & Css intermediate level</span>
+                        <div class="skill-bar">
+                            <div class="progress">
+                                <span>48%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Unity intermediate level</span>
+                        <div class="skill-bar">
+                            <div class="progress">
+                                <span>18%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Git/GitHub intermediate level</span>
+                        <div class="skill-bar">
+                            <div class="progress">
+                                <span>10%</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>    
+                <div class="col">
+                    <div class="skill">
+                        <span>Photoshop basic level</span>
+                        <div class="skill-bar">
+                            <div class="progress">
+                                <span>85%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Adobe Ilustrator basic level</span>
+                        <div class="skill-bar">
+                            <div class="progress">
+                                <span>85%</span>
+                            </div>
+                        </div>
+                    </div>    
+                    <div class="skill">
+                        <span>Toon boon Harmony basic level</span>
+                        <div class="skill-bar">
+                            <div class="progress">
+                                <span>85%</span>
+                            </div>
+                        </div>
+                    </div>    
+                    <div class="skill">
+                        <span>English level A1</span>
+                        <div class="skill-bar">
+                            <div class="progress">
+                                <span>65%</span>
+                            </div>
+                        </div>
+                    </div>    
+                </div>
+        </div>
+    </section>
+
+    <!--Section portfolio-->
+    <section id="portfolio" class="portfolio">
+        <div class="container-section">
+            <h2>Portfolio</h2>
+            <div class="gallery">
+                <div class="Project">
+                    <img src="/img/proyecto1.jpeg" alt="">
+                    <div class="overlay">
+                        <h3>creative design</h3>
+                        <p>Fotografía</p>
+                    </div>
+                </div>
+                <div class="Project">
+                    <img src="/img/proyecto2.jpeg" alt="">
+                    <div class="overlay">
+                        <h3>creative design</h3>
+                        <p>Fotografía</p>
+                    </div>
+                </div>
+                <div class="Project">
+                    <img src="/img/proyecto3.jpeg" alt="">
+                    <div class="overlay">
+                        <h3>creative design</h3>
+                        <p>Fotografía</p>
+                    </div>
+                </div>
+                <div class="Project">
+                    <img src="/img/proyecto4.jpeg" alt="">
+                    <div class="overlay">
+                        <h3>creative design</h3>
+                        <p>Fotografía</p>
+                    </div>
+                </div>
+                <div class="Project">
+                    <img src="/img/proyecto5.jpeg" alt="">
+                    <div class="overlay">
+                        <h3>creative design</h3>
+                        <p>Fotografía</p>
+                    </div>
+                </div>
+                <div class="Project">
+                    <img src="/img/proyecto6.jpeg" alt="">
+                    <div class="overlay">
+                        <h3>creative design</h3>
+                        <p>Fotografía</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--Section contact-->
+    <section id="contact" class="contact">
+        <div class="container-section">
+            <h2>Contact</h2>
+            <p>My interest is that we can work together, offer my knowledge so that we can be very productive, win and win.</p>
+            <div class="file">
+                <!--form--> 
+                <div class="col">
+                    <div class="info1 w50">
+                        <input type="text" required="required">
+                        <span>Your name</span>
+                    </div>
+                    <div class="info1 w50">
+                        <input type="text" required="required">
+                        <span>Phone number</span>
+                    </div>
+                    <div class="info1 w50">
+                        <input type="text" required="required">
+                        <span>Email</span>
+                    </div>
+                    <div class="info1 w50">
+                        <input type="text" required="required">
+                        <span>Topic</span>
+                    </div>
+                    <div class="info1 w100">
+                        <textarea required="required"></textarea>
+                        <span>Write your message here...</span>
+                    </div>
+                </div>
+                <div>    
+                    <button>
+                        Send message <i class="fa-solid fa-paper-plane"></i>
+                        <span class="overlay"></span>
+                    </button>
+                </div>
+                <!--map-->
+                <!-- <img src="/img/Goku-pic (1).png" alt=""> -->
+                <div class="info">
+                    <ul>
+                        <li>
+                            <i class="fa-solid fa-location-dot"></i>
+                            Colombia, Valle del Cauca, Cali
+                        </li>
+                        <li>
+                            <i class="fa-solid fa-mobile-screen"></i>
+                            (+57) 305 417 5387
+                        </li>
+                        <li>
+                            <i class="fa-solid fa-envelope"></i>
+                            Email: unumnio@gmail.com
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--footer-->
+    <footer>
+        <a href="#home" class="up">
+            <i class="fa-solid fa-angles-up"></i>
+        </a>
+        <div class="networks">
+            <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+            <a href="#"><i class="fa-brands fa-github"></i></a>
+            <a href="#"><i class="fa-brands fa-twitter"></i></a>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+
+
+
+</body>
+</html>
